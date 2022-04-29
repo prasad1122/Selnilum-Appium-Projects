@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Execution"  thread-count="2" parallel="tests">
+
+
+<test name="ThreadLocal">
+
+
+		<classes>
+		
+			<class
+				name="com.teledentistry.admin.tests.AdminUpdateClinicTest"/>
+		</classes>
+		
+	</test>
+	
+	<test name="ThreadLocal1">
+
+		<classes>
+		
+			<class
+				name="com.teledentistry.admin.tests.AdminUpdateCallCenterAgentTest"/>
+		</classes>
+		
+	</test>
+	
+</suite>
